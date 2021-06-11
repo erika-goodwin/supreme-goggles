@@ -3,6 +3,24 @@
 ## Q1: 
 > Write a Java program with a method named 'totalSum' that takes in an argument of two integers and return its sum. Call this method from main( ) and print the results.
 
+```
+public class Lab11June {
+    public static void totalSum(int x, int y) {
+        if (x == y) {
+            System.out.println("X: " + x + " AND Y: " + y);
+        } else {
+            System.out.println("NOT SAME X =/ Y");
+        }
+
+    }
+    public static void main(String[] args) {
+        totalSum(3,3);
+        }
+    }
+```
+
+Console: X: 3 AND Y: 3
+
 ## Q2:
 > Write a Java program with a method named 'getGrades' that will display grades according to the marks entered into the method call as below:
 ```
@@ -14,6 +32,33 @@ Marks        Grade
 51-60          C+
 41-50          D-
 <=40          Fail
+```
+
+```
+public class Lab11June {
+
+    public static void getGrades(int grade){
+        if (grade >= 91 && grade <= 100){
+            System.out.println("GRADE: A+");
+        } else if(grade >= 81 && grade <= 90){
+            System.out.println("GRADE: A-");
+        } else if(grade >= 71 && grade <= 80){
+            System.out.println("GRADE: B+");
+        }else if(grade >= 61 && grade <= 70){
+            System.out.println("GRADE: B-");
+        }else if(grade >= 51 && grade <= 60){
+            System.out.println("GRADE: C+");
+        }else if(grade >= 41 && grade <= 50){
+            System.out.println("GRADE: D-");
+        } else{
+            System.out.println("FAIL");
+        }
+    }
+    public static void main(String[] args) {
+        getGrades(80);
+    }
+}
+
 ```
 
 ## Q3:
