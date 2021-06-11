@@ -60,6 +60,7 @@ public class Lab11June {
 }
 
 ```
+Console: GRADE: B+
 
 ## Q3:
 > Write a program to print the factorial of a number by defining a method named 'factorial'. Factorial of any number n is represented by n! and is equal to 1*2*3*....
@@ -72,5 +73,40 @@ Also,
 0! = 0
 ```
 
+```
+public class Lab11June {
+    public static void factorial(int x) {
+        for (int i = x; i > 1; i--) {
+            x = x * (i-1);
+        }
+        System.out.println(x);
+    }
+
+    public static void main(String[] args) {
+        factorial(4);
+    }
+}
+```
+Console: 24
+
 ## Q4
 > Write a Java method to create the area of a pentagon.
+
+````
+public class Lab11June {
+public class Lab11June {
+
+    public static void areaOfPentagon(int sideLength) {
+//        int apothemLength = (int)  ((sideLength/2) / (Math.tan(Math.PI/5)));
+//        System.out.println(10*(0.5*sideLength*apothemLength));
+        System.out.println((5*sideLength*sideLength)/(4*(Math.tan(Math.PI/5))));
+    }
+    public static void main(String[] args) {
+        areaOfPentagon(5);
+    }
+}
+```
+
+Console: 43.01193501472417
+
+
